@@ -1,10 +1,12 @@
-# MFSUD – Instances
+# MFSUD
 
-This repository stores the instances used in the paper entitled `Robust Policies for a Multi-Period Fleet Sizing Problem under Demand Uncertainty` by Alice Raffaele, Demetrio Laganà, and Roberto Roberti.
+This repository stores the benchmark instances, with their detailed results, used in the paper entitled `Robust Policies for a Multi-Period Fleet Sizing Problem under Demand Uncertainty` by Alice Raffaele, Demetrio Laganà, and Roberto Roberti.
 
-In this repository, there are two benchmark sets:
+---
 
-- `Solomon`, composed of 1800 instances (half with 25 customers and the other half with 50 customers) divided into three subfolders.
+In the `instances` folder, there are two sets:
+
+- `Solomon`, composed of 1800 instances (half with 25 customers and the other half with 50 customers) divided into three subfolders (one per each value of Gamma adopted in the experiments).
 
 	The instance format is the following:
 
@@ -52,5 +54,27 @@ In this repository, there are two benchmark sets:
 	- the 45 labeled `Industrial*_5.txt` – `Industrial*_59.txt` are just *sampled* instances (i.e., at most $\Gamma$ customers exceed their minimum demand not on the same day).
 
 In all instances, the staffing cost is always set to `100`.
-	
+
+---
+
+The `results` folder contains the detailed results for each benchmark set and each configuration tested.
+
+For each configuration, there are 10 json files providing the detailed results of each instance.
+
+In particular, the following files correspond to the formulations described in Section 4:
+- det_ex_post.json, for the ex-post solutions EP (Formulation (7))
+- lb0.json, for the lower bounds LB_0 (Formulation (6))
+- rc_ub_dual.json, for the upper bounds DUA (Formulation (13))
+- soyster.json, for the upper bounds WC_0 (Formulation (8))
+
+Instead, the following files correspond to the upper bounds obtained by the ADP policy described in Section 5.4:
+- adp_my_det_nopend.json (MY-DET)
+- adp_my_oldest_nopend.json (PFA-LAR)
+- adp_my_oldest_sf_nopend.json (PFA-SMA)
+- adp_rc_lb_qmin_nopend.json (LA-MIN)
+- adp_rc_soyster_nopend.json (LA-WC)
+- adp_rc_ub_dual_nopend.json (LA-DUA)
+
+
+
 
