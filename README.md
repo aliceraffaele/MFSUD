@@ -59,7 +59,7 @@ In all instances, the staffing cost is always set to `100`.
 
 The `results` folder contains the detailed results for each benchmark set and each configuration tested.
 
-For each configuration, there are 10 json files providing the detailed results of each instance.
+For each configuration, 10 JSON files provide the detailed results for each instance.
 
 In particular, the following files correspond to the formulations described in Section 4:
 - `det_ex_post.json`, for the ex-post solutions EP (Formulation (7))
