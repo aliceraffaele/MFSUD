@@ -62,18 +62,18 @@ The `results` folder contains the detailed results for each benchmark set and ea
 For each configuration, there are 10 json files providing the detailed results of each instance.
 
 In particular, the following files correspond to the formulations described in Section 4:
-- det_ex_post.json, for the ex-post solutions EP (Formulation (7))
-- lb0.json, for the lower bounds LB_0 (Formulation (6))
-- rc_ub_dual.json, for the upper bounds DUA (Formulation (13))
-- soyster.json, for the upper bounds WC_0 (Formulation (8))
+- `det_ex_post.json`, for the ex-post solutions EP (Formulation (7))
+- `lb0.json`, for the lower bounds LB_0 (Formulation (6))
+- `rc_ub_dual.json`, for the upper bounds DUA (Formulation (13))
+- `soyster.json`, for the upper bounds WC_0 (Formulation (8))
 
 Instead, the following files correspond to the upper bounds obtained by the ADP policy described in Section 5.4:
-- adp_my_det_nopend.json (MY-DET)
-- adp_my_oldest_nopend.json (PFA-LAR)
-- adp_my_oldest_sf_nopend.json (PFA-SMA)
-- adp_rc_lb_qmin_nopend.json (LA-MIN)
-- adp_rc_soyster_nopend.json (LA-WC)
-- adp_rc_ub_dual_nopend.json (LA-DUA)
+- `adp_my_det_nopend.json` (MY-DET)
+- `adp_my_oldest_nopend.json` (PFA-LAR)
+- `adp_my_oldest_sf_nopend.json` (PFA-SMA)
+- `adp_rc_lb_qmin_nopend.json` (LA-MIN)
+- `adp_rc_soyster_nopend.json` (LA-WC)
+- `adp_rc_ub_dual_nopend.json` (LA-DUA)
 
 
 
